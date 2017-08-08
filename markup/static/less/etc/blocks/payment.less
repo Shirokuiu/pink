@@ -1,0 +1,176 @@
+.payment {
+  margin-bottom: 76px;
+  padding-top: 65px;
+  padding-bottom: 95px;
+  
+  background-color: #f3f3f3;
+}
+
+.payment__wrap {
+  display: flex;
+}
+
+.payment__list {
+  .reset();
+  
+  width: 25.31914893617021%;
+  
+  list-style: none;
+  &--description {
+    align-self: flex-end;
+  }
+}
+
+.payment__items {
+  height: 41px;
+  padding-top: 11px;
+  padding-left: 26px;
+  
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+  
+  background-color: #fff;
+  
+  border: 1px solid #e5e5e5;
+  &--title {
+    height: auto;
+    padding-top: 19px;
+    padding-left: 0;
+    padding-bottom: 20px;
+    
+    background-color: #243344;
+  }
+  &--hit {
+    background-image: url("%=static=%content/hit.png");
+    background-repeat: no-repeat;
+  }
+  &--confirm,
+  &--none {
+    position: relative;
+    &::before {
+      content: '';
+      
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      
+      margin: auto;
+    }
+  }
+  &--confirm {
+    &::before {
+      .bg-svg(@confirm);
+    }
+  }
+  &--none {
+    &::before {
+      .bg-svg(@none);
+    }
+  }
+}
+
+.payment__item {
+  display: none;
+}
+
+.payment__itemHeadline {
+  .reset();
+  
+  margin-bottom: 9px;
+  
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+.payment__itemPrice {
+  .reset();
+  
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: 940px) {
+  .payment {
+    margin-bottom: 56px;
+    padding-top: 32px;
+    padding-bottom: 68px;
+  }
+  
+  .payment__items {
+    padding-top: 3px;
+    padding-left: 17px;
+    
+    line-height: 38px;
+    font-size: 14px;
+    &--title {
+      padding-top: 14px;
+      padding-bottom: 9px;
+      padding-left: 0;
+    }
+    &--hit {
+      background-image: url(../img/content/hit-tablet.png);
+    }
+  }
+  
+  .payment__itemHeadline {
+    margin-bottom: 1px;
+    
+    font-size: 16px;
+  }
+  
+  .payment__itemPrice {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 610px) {
+  .payment {
+    margin-bottom: 50px;
+    padding-bottom: 79px;
+  }
+  
+  .payment__wrap {
+    position: relative;
+  }
+  
+  .payment__list {
+    &--description,
+    &--base,
+    &--unlim {
+      display: none;
+    }
+    &--standart {
+      width: 100%;
+    }
+  }
+  
+  .payment__items {
+    &--confirm,
+    &--none {
+      &::before {
+        top: 0;
+        left: auto;
+        right: 19px;
+        bottom: 0;
+        
+        margin: auto;
+      }
+    }
+  }
+  
+  .payment__item {
+    display: block;
+  }
+}

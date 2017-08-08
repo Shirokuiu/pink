@@ -1,0 +1,31 @@
+.bg-line {
+  height: 94px;
+  
+  background-image: url("%=static=%content/bg-line.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top center;
+  &--address {
+    position: relative;
+    z-index: 10;
+    
+    height: 123px;
+    
+    background-image: url("%=static=%content/bg-line-address.png");
+  }
+}
+
+@media (max-width: 940px) {
+  .bg-line {
+    height: 53px;
+    
+    background-image: url("%=static=%content/bg-line-tablet.png");
+    &--address {
+      top: -54px;
+      
+      height: 69px;
+      
+      background-image: url("%=static=%content/bg-line-address-tablet.png");
+    }
+  }
+}

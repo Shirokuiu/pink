@@ -1,0 +1,56 @@
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.socials__link {
+  display: block;
+  width: 45px;
+  height: 45px;
+  
+  border: 3px solid #e9eaec;
+  border-radius: 50%;
+  
+  transition: 0.1s ease;
+  &--tw,
+  &--fb,
+  &--yt {
+    position: relative;
+    &::before {
+      content: '';
+      
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      
+      margin: auto;
+    }
+  }
+  &--tw {
+    &::before {
+      .bg-svg(@tw);
+    }
+  }
+  &--fb {
+    &::before {
+      .bg-svg(@fb);
+    }
+  }
+  &--yt {
+    &::before {
+      left: 4px;
+      
+      .bg-svg(@yt);
+    }
+  }
+  &:hover {
+    border: 3px solid #283645;
+  }
+  &:active {
+    opacity: 0.1;
+  }
+}

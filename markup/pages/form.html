@@ -1,0 +1,184 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+  <head>
+    {{> head/head head.form}}
+  </head>
+  <body class="page">
+    %=symbols=%
+    <div class="page__wrapper">
+      <header class="page-header page-header--photo">
+        <div class="page-header__rowTop">
+          <div class="container">
+            <nav class="main-nav">
+              <div class="logo logo--header">
+                <a class="logo__link logo__link--header" href="index.html"></a>
+              </div>
+              <ul class="main-nav__list">
+                <li class="main-nav__items"><a href="index.html" class="main-nav__item">Главная</a></li>
+                <li class="main-nav__items"><a href="photo.html" class="main-nav__item">Фотографии</a></li>
+                <li class="main-nav__items"><a class="main-nav__item main-nav__item--active">Конкурс</a></li>
+                <li class="main-nav__items"><a href="#" class="main-nav__item">HTML Academy</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="page-header__rowContent">
+          <div class="container">
+            <div class="page-header__rowContent-wrap page-header__rowContent-wrap--photo">
+              <h1 class="page-header__headline page-header__headline--photo">Конкурс на самое безбашенное путешествие с Пинк</h1>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page-content">
+        <div class="page-title page-title--photo page-title--margin">
+          <div class="container">
+            <h2 class="page-title__headline page-title__headline--photo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
+          </div>
+        </div>
+        <form class="main-form" action="action.php" method="get">
+          <div class="container">
+            <div class="main-form__wrap">
+              <div class="main-form__blocksWrap">
+                <div class="main-form__block-userName">
+                  <ul class="main-form__block-userName-list">
+                    <li class="main-form__block-userName-items">
+                      <label for="userSurname">Фамилия:</label>
+                      <input id="userSurname" type="text" name="userSurname" placeholder="Укажите фамилию *" required>
+                    </li>
+                    <li class="main-form__block-userName-items">
+                      <label for="userName">Имя:</label>
+                      <input id="userName" type="text" name="userName" placeholder="Введите ваше имя *" required>
+                    </li>
+                    <li class="main-form__block-userName-items">
+                      <label for="userSecondname">Отчество:</label>
+                      <input id="userSecondname" type="text" name="userSecondname" placeholder="Ну и отчество тоже">
+                    </li>
+                  </ul>
+                </div>
+                <div class="main-form__block-app">
+                  <h2 class="main-form__block-headline">С каким приложением путешествовали?</h2>
+                  <div class="main-form__block-app-content">
+                    <ul class="main-form__block-app-list">
+                      <li class="main-form__block-app-items">
+                        <input id="ios" type="radio" name="app" checked>
+                        <label for="ios">Pink для iOS
+                          <span></span>
+                        </label>
+                      </li>
+                      <li class="main-form__block-app-items">
+                        <input id="android" type="radio" name="app">
+                        <label for="android">Pink на Android
+                          <span></span>
+                        </label>
+                      </li>
+                      <li class="main-form__block-app-items">
+                        <input id="microsoft" type="radio" name="app">
+                        <label for="microsoft">Windows Phone
+                          <span></span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="main-form__block-contacts">
+                <h2 class="main-form__block-headline">Контактная информация</h2>
+                <ul class="main-form__block-contacts-list">
+                  <li class="main-form__block-contacts-items">
+                    <div class="main-form__block-contacts-inputWrap main-form__block-contacts-inputWrap--tel">
+                      <input id="userTel" type="tel" name="userTel" placeholder="Номер, пожалуйста">
+                      <span></span>
+                    </div>
+                    <label for="userTel">Номер телефона</label>
+                  </li>
+                  <li class="main-form__block-contacts-items">
+                    <div class="main-form__block-contacts-inputWrap main-form__block-contacts-inputWrap--mail">
+                      <input id="userMail" type="email" name="userMail" placeholder="Введите почту *" required>
+                      <span></span>
+                    </div>
+                    <label for="userMail">Адрес почты</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="main-form__block-achivments">
+                <h2 class="main-form__block-headline">Ваши безбашенные достижения в путешествии</h2>
+                <ul class="main-form__block-achivments-list">
+                  <li class="main-form__block-achivments-items">
+                    <input id="achivment1" type="checkbox" name="achivment" checked>
+                    <label for="achivment1">Сделал селфи с акулой
+                      <span></span>
+                    </label>    
+                  </li>
+                  <li class="main-form__block-achivments-items">
+                    <input id="achivment2" type="checkbox" name="achivment">
+                    <label for="achivment2">Видел Чака Норриса
+                      <span></span>
+                    </label>
+                  </li>
+                  <li class="main-form__block-achivments-items">
+                    <input id="achivment3" type="checkbox" name="achivment" checked>
+                    <label for="achivment3">Удержал башню
+                      <span></span>
+                    </label>
+                  </li>
+                  <li class="main-form__block-achivments-items">
+                    <input id="achivment4" type="checkbox" name="achivment" checked>
+                    <label for="achivment4">Обгорел на пляже
+                      <span></span>
+                    </label>
+                  </li>
+                  <li class="main-form__block-achivments-items">
+                    <input id="achivment5" type="checkbox" name="achivment">
+                    <label for="achivment5">Накупил сувениров
+                      <span></span>
+                    </label>
+                  </li>
+                  <li class="main-form__block-achivments-items">
+                    <input id="achivment6" type="checkbox" name="achivment">
+                    <label for="achivment6">Разгромил отель
+                      <span></span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="main-form__block-textarea">
+                <h2 class="main-form__block-headline">Ваши безбашенные достижения в путешествии</h2>
+                <div class="main-form__block-textarea-content">
+                  <textarea name="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                </div>
+              </div>
+              <div class="main-form__block-send">
+                <button class="main-form__block-sendButton" type="submit">Отправить форму</button>
+                <p class="main-form__block-sendText"><span>*</span> — обязательные для заполнения поля</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </main>
+      <footer class="page-footer">
+        <div class="container">
+          <div class="page-footer__wrap">
+            <div class="logo">
+              <a class="logo__link logo__link--footer" href="index.html"></a>
+            </div>
+            <div class="socials">
+              <a href="#" class="socials__link socials__link--tw"></a>
+              <a href="#" class="socials__link socials__link--fb"></a>
+              <a href="#" class="socials__link socials__link--yt"></a>
+            </div>
+            <div class="copyright">
+              <a class="copyright__link" href="https://htmlacademy.ru/">Разработано</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+
+    <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+    <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+  </body>
+</html>

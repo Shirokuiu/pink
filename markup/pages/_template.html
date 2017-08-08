@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+  <head>
+    {{> head/head head.defaults}}
+  </head>
+  <body class="page">
+    %=symbols=%
+    <div class="page__wrapper">
+      <header class="page-header page-header--photo">
+        <div class="page-header__rowTop">
+          <div class="container">
+            <nav class="main-nav">
+              <div class="logo logo--header">
+                <a class="logo__link logo__link--header" href="index.html"></a>
+              </div>
+              <ul class="main-nav__list">
+                <li class="main-nav__items"><a href="index.html" class="main-nav__item">Главная</a></li>
+                <li class="main-nav__items"><a class="main-nav__item main-nav__item--active">Фотографии</a></li>
+                <li class="main-nav__items"><a href="#" class="main-nav__item">Конкурс</a></li>
+                <li class="main-nav__items"><a href="#" class="main-nav__item">HTML Academy</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="page-header__rowContent">
+          <div class="container">
+            <div class="page-header__rowContent-wrap page-header__rowContent-wrap--photo">
+              <h1 class="page-header__headline page-header__headline--photo">Фотографии пользователей</h1>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page-content">
+        <div class="page-title page-title--photo">
+          <div class="container">
+            <h2 class="page-title__headline page-title__headline--photo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+          </div>
+        </div>
+      </main>
+      <footer class="page-footer">
+        <div class="container">
+          <div class="page-footer__wrap">
+            <div class="logo">
+              <a class="logo__link logo__link--footer" href="index.html"></a>
+            </div>
+            <div class="socials">
+              <a href="#" class="socials__link socials__link--tw"></a>
+              <a href="#" class="socials__link socials__link--fb"></a>
+              <a href="#" class="socials__link socials__link--yt"></a>
+            </div>
+            <div class="copyright">
+              <a class="copyright__link" href="https://htmlacademy.ru/">Разработано</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+
+    <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+    <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+  </body>
+</html>
