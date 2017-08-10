@@ -181,6 +181,10 @@
     background-color: #17212e;
     background-image: url("%=static=%content/header-bg-mobile.jpg");
     background-size: 100% 462px;
+    &--photo {
+      margin-bottom: 54px;
+      padding-bottom: 0;
+    }
   }
   
   .page-header__rowTop {
@@ -191,6 +195,11 @@
   .page-header__rowContent {
     .container {
       padding-top: 108px;
+    }
+    &--photo {
+      .container {
+        padding-top: 0;
+      }
     }
   }
   
@@ -203,10 +212,28 @@
     
     background-image: url("%=static=%content/header-bg-content-mobile.png");
     background-position: 0 0;
+    &--photo {
+      height: auto;
+      padding-top: 35px;
+      padding-bottom: 87px;
+      
+      background-image: none;
+    }
   }
   
   .page-header__headline {
     display: none;
+    &--photo {
+      display: block;
+      width: auto;
+      min-width: auto;
+      margin-left: 0;
+      margin-bottom: 0;
+      
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 300;
+    }
   }
   
   .page-header__rowContent-link {

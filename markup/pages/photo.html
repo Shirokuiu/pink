@@ -23,7 +23,7 @@
             </nav>
           </div>
         </div>
-        <div class="page-header__rowContent">
+        <div class="page-header__rowContent page-header__rowContent--photo">
           <div class="container">
             <div class="page-header__rowContent-wrap page-header__rowContent-wrap--photo">
               <h1 class="page-header__headline page-header__headline--photo">Фотографии пользователей</h1>
@@ -40,7 +40,8 @@
         <div class="popular-photo">
           <div class="popular-photo__img">
             <picture>
-              <source media="(max-width: 950px)" srcset="%=static=%img/content/popular-photo-tablet.jpg">
+              <source media="(max-width: 950px) and (min-width: 611px)" srcset="%=static=%img/content/popular-photo-tablet.jpg">
+              <source media="(max-width: 610px)" srcset="%=static=%img/content/popular-photo-mobile.jpg">
               <img src="%=static=%img/content/popular-photo.jpg" alt="Панорама дня">
             </picture>
             <div class="popular-photo__mark">Панорама дня</div>
@@ -63,7 +64,8 @@
               <div class="photo-cart">
                 <div class="photo-cart__img">
                   <picture>
-                    <source media="(max-width: 950px)" srcset="%=static=%img/content/photo-cart-img1-tablet.jpg">
+                    <source media="(max-width: 950px) and (min-width: 611px)" srcset="%=static=%img/content/photo-cart-img1-tablet.jpg">
+                    <source media="(max-width: 610px)" srcset="%=static=%img/content/photo-cart-img1-mobile.jpg"> 
                     <img src="%=static=%img/content/photo-cart-img1.jpg" alt="Фото пользователя">
                   </picture>
                 </div>
@@ -78,7 +80,8 @@
               <div class="photo-cart">
                 <div class="photo-cart__img">
                   <picture>
-                    <source media="(max-width: 950px)" srcset="%=static=%img/content/photo-cart-img2-tablet.jpg">
+                    <source media="(max-width: 950px) and (min-width: 611px)" srcset="%=static=%img/content/photo-cart-img2-tablet.jpg">
+                    <source media="(max-width: 610px)" srcset="%=static=%img/content/photo-cart-img2-mobile.jpg">
                     <img src="%=static=%img/content/photo-cart-img2.jpg" alt="Фото пользователя">
                   </picture>
                 </div>
@@ -93,7 +96,8 @@
               <div class="photo-cart">
                 <div class="photo-cart__img">
                   <picture>
-                    <source media="(max-width: 950px)" srcset="%=static=%img/content/photo-cart-img3-tablet.jpg">
+                    <source media="(max-width: 950px) and (min-width: 611px)" srcset="%=static=%img/content/photo-cart-img3-tablet.jpg">
+                    <source media="(max-width: 610px)" srcset="%=static=%img/content/photo-cart-img3-mobile.jpg">
                     <img src="%=static=%img/content/photo-cart-img3.jpg" alt="Фото пользователя">
                   </picture>
                 </div>
@@ -108,7 +112,8 @@
               <div class="photo-cart">
                 <div class="photo-cart__img">
                   <picture>
-                    <source media="(max-width: 950px)" srcset="%=static=%img/content/photo-cart-img4-tablet.jpg">
+                    <source media="(max-width: 950px) and (min-width: 611px)" srcset="%=static=%img/content/photo-cart-img4-tablet.jpg">
+                    <source media="(max-width: 610px)" srcset="%=static=%img/content/photo-cart-img4-mobile.jpg">
                     <img src="%=static=%img/content/photo-cart-img4.jpg" alt="Фото пользователя">
                   </picture>
                 </div>
@@ -123,7 +128,8 @@
               <div class="photo-cart">
                 <div class="photo-cart__img">
                   <picture>
-                    <source media="(max-width: 950px)" srcset="%=static=%img/content/photo-cart-img5-tablet.jpg">
+                    <source media="(max-width: 950px) and (min-width: 611px)" srcset="%=static=%img/content/photo-cart-img5-tablet.jpg">
+                    <source media="(max-width: 610px)" srcset="%=static=%img/content/photo-cart-img5-mobile.jpg">
                     <img src="%=static=%img/content/photo-cart-img5.jpg" alt="Фото пользователя">
                   </picture>
                 </div>
@@ -138,7 +144,8 @@
               <div class="photo-cart">
                 <div class="photo-cart__img">
                   <picture>
-                    <source media="(max-width: 950px)" srcset="%=static=%img/content/photo-cart-img6-tablet.jpg">
+                    <source media="(max-width: 950px) and (min-width: 611px)" srcset="%=static=%img/content/photo-cart-img6-tablet.jpg">
+                    <source media="(max-width: 610px)" srcset="%=static=%img/content/photo-cart-img6-mobile.jpg">
                     <img src="%=static=%img/content/photo-cart-img6.jpg" alt="Фото пользователя">
                   </picture>
                 </div>
@@ -160,7 +167,8 @@
               <div class="photo-filter__content">
                 <div class="photo-filter__img">
                   <picture>
-                    <source media="(max-width: 950px)" srcset="%=static=%img/content/photo-filter-img-tablet.jpg">
+                    <source media="(max-width: 950px) and (min-width: 611px)" srcset="%=static=%img/content/photo-filter-img-tablet.jpg">
+                    <source media="(max-width: 610px)" srcset="%=static=%img/content/photo-filter-img-mobile.jpg">
                     <img src="%=static=%img/content/photo-filter-img.jpg" alt="Фото фильтра">
                   </picture>
                 </div>
@@ -186,13 +194,13 @@
           </div>
         </div>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer page-footer--photo">
         <div class="container">
           <div class="page-footer__wrap">
-            <div class="logo">
+            <div class="logo logo--footer">
               <a class="logo__link logo__link--footer" href="index.html"></a>
             </div>
-            <div class="socials">
+            <div class="socials socials--photo">
               <a href="#" class="socials__link socials__link--tw"></a>
               <a href="#" class="socials__link socials__link--fb"></a>
               <a href="#" class="socials__link socials__link--yt"></a>
