@@ -605,3 +605,99 @@
     }
   }
 }
+
+@media (max-width: 610px) {
+  .main-form__block-userName {
+    margin-bottom: 42px;
+  }
+  
+  .main-form__block-userName-items {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 19px;
+    label {
+      margin-right: 0;
+      margin-bottom: 6px;
+      margin-left: 23px;
+    }
+    input {
+      box-sizing: border-box;
+      width: 100%;
+    }
+  }
+  
+  .main-form__block-app {
+    padding-top: 39px;
+    
+    background-color: #f2f2f2;
+  }
+  
+  .main-form__block-headline {
+    display: block;
+    
+    text-align: center;
+    &::after,
+    &::before {
+      display: none;
+    }
+    &--contacts {
+      display: none;
+    }
+  }
+  
+  .main-form__block-app-content {
+    border: none;
+  }
+  
+  .main-form__block-contacts-list {
+    padding-left: 0;
+    padding-right: 0;
+    
+    border: none;
+  }
+  
+  .main-form__block-contacts-items {
+    flex-direction: column-reverse;
+    label {
+      margin-bottom: 6px;
+    }
+  }
+  
+  .main-form__block-contacts-inputWrap {
+    &--tel,
+    &--mail {
+      span {
+        display: none;
+      }
+    }
+    input {
+      padding-right: 22px;
+    }
+  }
+  
+  .main-form__block-achivments-list {
+    border: none;
+  }
+  
+  .main-form__block-textarea {
+    margin-bottom: 48px;
+  }
+  
+  .main-form__block-textarea-content {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    
+    border: none;
+  }
+  
+  .main-form__block-send {
+    flex-direction: column;
+  }
+  
+  .main-form__block-sendButton {
+    width: 100%;
+    min-width: auto;
+    margin-bottom: 36px;
+  }
+}
