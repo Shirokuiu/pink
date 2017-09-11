@@ -34,6 +34,7 @@ $(function () {
   var mainNavList = $('#mainNavList');
   
   mainNavButton.click(function () {
+    $(this).toggleClass('main-nav__button--open');
     pageHeaderRowTop.toggleClass('page-header__rowTop--open');
     mainNav.toggleClass('main-nav--open');
     mainNavList.toggleClass('main-nav__list--open');
