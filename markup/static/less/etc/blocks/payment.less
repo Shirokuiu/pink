@@ -10,6 +10,11 @@
   display: flex;
 }
 
+.payment__slider {
+  display: flex;
+  width: 100%;
+}
+
 .payment__list {
   .reset();
   
@@ -18,6 +23,11 @@
   list-style: none;
   &--description {
     align-self: flex-end;
+  }
+  &--base,
+  &--standart,
+  &--unlim {
+    width: 33.42776203966006%;
   }
 }
 
@@ -49,6 +59,8 @@
   &--confirm,
   &--none {
     position: relative;
+    
+    font-size: 0;
     &::before {
       content: '';
       
@@ -122,6 +134,10 @@
     &--hit {
       background-image: url(../img/content/hit-tablet.png);
     }
+    &--confirm,
+    &--none {
+      font-size: 0;
+    }
   }
   
   .payment__itemHeadline {
@@ -146,19 +162,60 @@
   }
   
   .payment__list {
-    &--description,
-    &--base,
-    &--unlim {
+    &--description {
       display: none;
     }
-    &--standart {
+    &--base,
+    &--standart,
+    &--unlim {
       width: 100%;
+    }
+  }
+  
+  #paymentSlider {
+    position: relative;
+    .owl-dots {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -41px;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      .owl-dot {
+        margin-right: 16px;
+        &:last-child {
+          margin-right: 0;
+        }
+        span {
+          display: block;
+          width: 6px;
+          height: 6px;
+
+          background-color: #bdc1c7;
+          border-radius: 50%;
+        }
+      }
+      .active {
+        span {
+          width: 3px;
+          height: 3px;
+
+          background-color: transparent;
+
+          border: 3px solid #283645;
+          border-radius: 50%;
+        }
+      }
     }
   }
   
   .payment__items {
     &--confirm,
     &--none {
+      font-size: 18px;
       &::before {
         top: 0;
         left: auto;
