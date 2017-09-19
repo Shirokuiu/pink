@@ -47,4 +47,13 @@ $(function () {
       items: 1
     });
   };
+  
+  $('#mainForm').validate({
+    rules: {
+      userSurname: {
+        required: true
+        
+      }
+    }
+  });
 });

@@ -35,6 +35,11 @@
     line-height: 30px;
     text-transform: uppercase;
     color: #d22856;
+    &.error {
+      position: absolute;
+      
+      font-size: 0;
+    }
   }
   input {
     flex-grow: 1;
@@ -51,8 +56,21 @@
     
     border: 2px solid #e5e5e5;
     outline: none;
+    &.error {
+      background-color: #f6dada;
+      
+      border-color: #d22856;
+    }
+    &.valid {
+      background-color: rgba(163, 214, 163, 0.47);
+      
+      border-color: rgba(163, 214, 163, 0.47);
+    }
     &:focus {
       border-color: #d22856;
+      &.valid {
+        border-color: rgba(163, 214, 163, 0.47);
+      }
     }
     &::-webkit-input-placeholder {
       color: #283645;
@@ -254,6 +272,16 @@
     
     border: 2px solid #e5e5e5;
     outline: none;
+    &.error {
+      background-color: #f6dada;
+      
+      border-color: #d22856;
+    }
+    &.valid {
+      background-color: rgba(163, 214, 163, 0.47);
+      
+      border-color: rgba(163, 214, 163, 0.47);
+    }
     &:focus {
       border-color: #d22856;
     }
@@ -301,6 +329,11 @@
     line-height: 30px;
     text-transform: uppercase;
     color: #d22856;
+    &.error {
+      position: absolute;
+      
+      font-size: 0;
+    }
   }
 }
 
